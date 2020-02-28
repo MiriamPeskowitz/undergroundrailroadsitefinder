@@ -32,11 +32,11 @@ site_8 = Site.create(name: "William and Letitia Still House", address: "625 Sout
 
 
 
-note_1 = Note.create(site_id: "1", user_id: '1', title: "", body: "magic brilliant! peachy blue down in the dumps gloomy doleful crestfallen cheerful jolly merry bold audacious confident  gutsy brash pushy bossy meek obedient  timid humble self-efffacing forceful insistent determined worried troubled distressed worked up nervous rattled tense decisive self-assured commanding in charge faint-hearted fearful bold plucky heroic normal typical ordinary expected epic monumental grand stately majestic lavish posh eminent august honored esteemed renowned")
+note_1 = Note.create(site_id: 1, user_id: 1, title: "Belmont", body: "magic brilliant! peachy blue down in the dumps gloomy doleful crestfallen cheerful jolly merry bold audacious confident  gutsy brash pushy bossy meek obedient  timid humble self-efffacing forceful insistent determined worried troubled distressed worked up nervous rattled tense decisive self-assured commanding in charge faint-hearted fearful bold plucky heroic normal typical ordinary expected epic monumental grand stately majestic lavish posh eminent august honored esteemed renowned")
 
-note_2 = Note.create(site_id: "2", user_id: '1', title: "", body: "ipsum lorem change it around courageous awesome beautiful inside mellow curious intrigue interest eager inquisitive loved treasured connected kindness care energetic active spry sporty vital creative inventive resourceful inspired artistic expressive")
+note_2 = Note.create(site_id: 2, user_id: 1, title: "St. George's", body: "ipsum lorem change it around courageous awesome beautiful inside mellow curious intrigue interest eager inquisitive loved treasured connected kindness care energetic active spry sporty vital creative inventive resourceful inspired artistic expressive")
 
-note_3 = Note.create(site_id: "3", user_id: '2', title: "", body: "forceful insistent determined worried troubled distressed worked up nervous rattled tense decisive self-assured commanding")
+note_3 = Note.create(site_id: 3, user_id: 2, title: "The cemetery", body: "forceful insistent determined worried troubled distressed worked up nervous rattled tense decisive self-assured commanding")
 
 # text (#7) from https://www.onlyinyourstate.com/pennsylvania/philadelphia/underground-railroad-in-philadelphia-pa/
 # and the rest from   https://www.visitphilly.com/articles/philadelphia/underground-railroad-in-philadelphia/#the-national-archives-at-philadelphia
