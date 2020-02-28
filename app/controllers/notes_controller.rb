@@ -3,5 +3,4 @@ class NotesController < ApplicationController
 		notes = Note.all
 		render json: NoteSerializer.new(notes)		
 	end
-
 end
