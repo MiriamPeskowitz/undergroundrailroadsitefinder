@@ -10,7 +10,6 @@ class UsersController < ApplicationController
 		options = {
 			include: [:site, :note]
 		}
-		# render json: user.to_json(:include => :site)
 		render json: UserSerializer.new(user, options)
 
 	end
