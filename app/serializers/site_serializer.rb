@@ -18,5 +18,5 @@ class SiteSerializer
 	  options[:except] = [:updated_at]
  
  	 @site.to_json(options)
-	end
+  end
 end

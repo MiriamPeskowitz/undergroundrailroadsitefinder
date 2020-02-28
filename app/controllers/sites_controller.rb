@@ -6,7 +6,7 @@ class SitesController < ApplicationController
 
 	def show
 		site = Site.find_by(id: params[:id])
-		render json: SitesController.new(site).to_serialized_json	
+		render json: SiteSerializer.new(site).to_serialized_json	
 	end
 
 end
