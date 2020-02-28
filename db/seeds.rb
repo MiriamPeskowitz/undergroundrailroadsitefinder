@@ -36,7 +36,7 @@ note_1 = Note.create(site_id: "1", user_id: '1', title: "", body: "magic brillia
 
 note_2 = Note.create(site_id: "2", user_id: '1', title: "", body: "ipsum lorem change it around courageous awesome beautiful inside mellow curious intrigue interest eager inquisitive loved treasured connected kindness care energetic active spry sporty vital creative inventive resourceful inspired artistic expressive")
 
-note_3 = Note.create(side_id: "3", user_id: '2', title: "", body: "forceful insistent determined worried troubled distressed worked up nervous rattled tense decisive self-assured commanding")
+note_3 = Note.create(site_id: "3", user_id: '2', title: "", body: "forceful insistent determined worried troubled distressed worked up nervous rattled tense decisive self-assured commanding")
 
 # text (#7) from https://www.onlyinyourstate.com/pennsylvania/philadelphia/underground-railroad-in-philadelphia-pa/
 # and the rest from   https://www.visitphilly.com/articles/philadelphia/underground-railroad-in-philadelphia/#the-national-archives-at-philadelphia
