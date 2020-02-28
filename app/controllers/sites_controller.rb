@@ -1,10 +1,13 @@
 class SitesController < ApplicationController
 	def index
 		sites = Site.all
-		 options = {
-		 	include: [:notes]
-		 }
-		# render json: sites.to_json
-		render json: SiteSerializer.new(sites, options)
+		render json: SiteSerializer.new(sites).to_serialized_json
 	end
+
+	def show
+		site = Site.find_by(id: params[:id])
+		render json: SitesController.new(site).to_serialized_json	
+	end
+
 end
+
