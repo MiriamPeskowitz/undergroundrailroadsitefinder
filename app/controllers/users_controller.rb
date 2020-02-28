@@ -7,8 +7,11 @@ class UsersController < ApplicationController
 
 	def show
 		user = User.find_by(id: params[:id])
+		options = {
+			include: [:site, :note]
+		}
 		# render json: user.to_json(:include => :site)
-		render json: UserSerializer.new(user)
+		render json: UserSerializer.new(user, options)
 
 	end
 
