@@ -17,3 +17,12 @@ site_4 = Site.create(name: "Johnson House Historic Site", address: "6306 Germant
 site_5 = Site.create(name: "Harriet Tubman Memorial Statue", address: "150 Basin Park", city: "Bristol", state: "PA", zipcode: "19007", description: "A statue honoring Underground Railroad conductor Harriet Tubman sits along the Delaware River waterfront in the Bucks County town of Bristol. The statue depicts Tubman pointing in the direction of the North Star.", visited: "no")
 
 site_6 = Site.create(name: "Kennet Underground Railroad Center", address: "300 Greenwood Road", city: "Kennett Square", state: "PA", zipcode: "19348", description: "A statue honoring Underground Railroad conductor Harriet Tubman sits along the Delaware River waterfront in the Bucks County town of Bristol. The statue depicts Tubman pointing in the direction of the North Star.", visited: "no")
+
+site_7 = Site.create(name: "Mother Bethel AME Church", address: "419 S 6th St", city: "Philadelphia", state: "PA", zipcode: "19147", description: "Mother Bethel was the first African Methodist Church in the country and sits on the oldest known African-owned plot of land in the city. The basement here was a safe haven for runaway slaves traveling on the Underground Railroad. Frederick Douglass and Sojourner Truth are among the famous abolitionists that have spoken here.", visited: "no")
+
+site_8 = Site.create(name: "William and Letitia Still House", address: "625 South Delhi Street", city: "Philadelphia", state: "PA", zipcode: "19147", description: "In the 1850s, this was home to Underground Railroad leaders William and Letitia Still. Within the house’s narrow confines, they hid hundreds of escapees and gave well-known figures like Harriet Tubman shelter. Looking at this almost 180-year-old rowhouse just off South Street, preservation activist Oscar Beisert says that its stoop appears to be the original marble from the 19th century. We don’t even have basic African-American landmarks protected in Philadelphia…[so] finding that stoop where she [Tubman] potentially arrived with people from Maryland, that’s what I think is really incredible about what we have here,” said Beisert.", visited: "no")
+
+
+# text (#7) from https://www.onlyinyourstate.com/pennsylvania/philadelphia/underground-railroad-in-philadelphia-pa/
+# and the rest from   https://www.visitphilly.com/articles/philadelphia/underground-railroad-in-philadelphia/#the-national-archives-at-philadelphia
+# #8 is from https://whyy.org/segments/found-south-philadelphia-underground-railroad-station/
