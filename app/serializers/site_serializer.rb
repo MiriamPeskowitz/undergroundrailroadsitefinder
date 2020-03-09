@@ -11,9 +11,9 @@ class SiteSerializer
   def to_serialized_json
   	options = {}
   	options[:include] = {
-		notes: {
-			only: [:id, :title, :body, :site_id, :user_id]
-		}
+		  notes: {
+			 only: [:id, :title, :body, :site_id, :user_id]
+		  }
 	  }
 	  options[:except] = [:updated_at]
  
