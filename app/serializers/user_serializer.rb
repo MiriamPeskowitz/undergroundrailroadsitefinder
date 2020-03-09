@@ -1,8 +1,8 @@
 class UserSerializer
   # include FastJsonapi::ObjectSerializer
-  # attributes :id, :name, :email
-  # has_many :sites
-  # has_many :notes, through: :sites
+  attributes :id, :name, :email
+  has_many :sites
+  has_many :notes, through: :sites
 
 	def initialize(user_object)
 		@user = user_object
