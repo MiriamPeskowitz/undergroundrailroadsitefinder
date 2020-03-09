@@ -1,4 +1,4 @@
-class NotesController < ApplicationController
+class Api::V1::NotesController < ApplicationController
 	def index
 		notes = Note.all
 		render json: NoteSerializer.new(notes)		
