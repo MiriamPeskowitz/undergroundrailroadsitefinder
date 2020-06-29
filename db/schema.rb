@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_28_143737) do
+ActiveRecord::Schema.define(version: 2020_06_29_152600) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2020_02_28_143737) do
   create_table "notes", force: :cascade do |t|
     t.string "title"
     t.text "body"
-    t.integer "site_id"
-    t.integer "user_id"
+    t.bigint "site_id"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["site_id"], name: "index_notes_on_site_id"
@@ -47,6 +47,8 @@ ActiveRecord::Schema.define(version: 2020_02_28_143737) do
     t.string "next"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "password_digest"
+    t.string "bio"
   end
 
   add_foreign_key "notes", "sites"
