@@ -172,7 +172,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   awesome_print
-  bcrypt (~> 3.1.7)
+  bcrypt
   bootsnap (>= 1.4.2)
   byebug
   faker
