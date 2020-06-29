@@ -10,7 +10,11 @@ class Api::V1::UsersController < ApplicationController
 
 	def show
 		user = User.find_by(id: params[:id])
-		render json: UserSerializer.new(user).to_serialized_json
+		if user 
+			render json: UserSerializer.new(user).to_serialized_json
+		else 
+			render json: { status: 500, errors: ['no users found']}
+		end
 	end
 
 	def create
@@ -27,5 +31,5 @@ class Api::V1::UsersController < ApplicationController
 	def user_params
 		params.require(:user).permit(:name, :email, :password, :bio)
 	end 
-
+	# add :password_confirmation to model and user_params? 
 end
