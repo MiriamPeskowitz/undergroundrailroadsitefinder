@@ -1,4 +1,9 @@
 class Api::V1::UsersController < ApplicationController
+	
+	def new
+		@user = User.new
+	end 
+
 	def index
 		users = User.all 
 		if users 
@@ -23,13 +28,15 @@ class Api::V1::UsersController < ApplicationController
 			render json: {user: 
 				UserSerializer.new(@user) }, status: :created
 		else
-			render json: {error: 'failed to create user' }, status: :not_acceptable
+			render json: {error: 'failed to create user' }, status: 401
 		end
 	end
+	# or @user = User.new(user_params)
+	#if @user.save login 
 
 	private
 	def user_params
-		params.require(:user).permit(:name, :email, :password, :bio)
+		params.require(:user).permit(:name, :email, :password_digest, :bio)
 	end 
-	# add :password_confirmation to model and user_params? 
+	# bcrypt adds :password_confirmation to model and user_params? 
 end
